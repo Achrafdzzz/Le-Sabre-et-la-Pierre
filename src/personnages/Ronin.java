@@ -30,7 +30,7 @@ public class Ronin extends Humain {
 			honneur-=1;
 			int argentDuel=getArgent();
 			perdreArgent(argentDuel);
-			System.out.println("'ai perdu contre ce yakuza, mon honneur et ma bourse ont en pris un coup.");
+			System.out.println("J'ai perdu contre ce yakuza, mon honneur et ma bourse ont en pris un coup.");
 			adversaire.gagner(argentDuel);
 			
 		}

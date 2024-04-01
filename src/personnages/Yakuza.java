@@ -2,7 +2,7 @@ package personnages;
 
 public class Yakuza extends Humain {
 
-	private int reputation = 0;
+	private int reputation = 1;
 	private String clan;
 
 	public Yakuza(String nom, String boissonFav, int argent, String clan) {
@@ -26,11 +26,11 @@ public class Yakuza extends Humain {
 	}
 
 	public int perdre() {
+		System.out.println(getArgent());
 		int argentDuel = getArgent();
-		perdreArgent(getArgent());
+		perdreArgent(argentDuel);
 		reputation += -1;
-		System.out.println(
-				"J’ai perdu mon duel et mes " + argentDuel + " sous, snif... J'ai déshonoré le clan de" + clan);
+		System.out.println("J’ai perdu mon duel et mes " + argentDuel + " sous, snif... J'ai déshonoré le clan de" + clan);
 		return 0;
 	}
 
