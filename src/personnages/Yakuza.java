@@ -31,7 +31,7 @@ public class Yakuza extends Humain {
 		perdreArgent(argentDuel);
 		reputation += -1;
 		System.out.println("J’ai perdu mon duel et mes " + argentDuel + " sous, snif... J'ai déshonoré le clan de" + clan);
-		return 0;
+		return argentDuel;
 	}
 
 	public void gagner(int gain) {
