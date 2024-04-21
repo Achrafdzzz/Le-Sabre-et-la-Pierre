@@ -62,7 +62,6 @@ public class Humain {
 			memoire[nbConnaissance]=humain;
 		}
 	}
-	
 	private void repondre() {
 		direBonjour();
 	}
